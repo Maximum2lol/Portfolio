@@ -20,8 +20,8 @@ body {
   z-index: +1; /*dette gjør så navbaren går over alt annet*/
   top: 0;
   width: 100%;
-  
 }
+
 
 .navbar a {
   float: left;
@@ -32,11 +32,11 @@ body {
   text-decoration: none;
   font-size: 17px;
 }
-
 .navbar a:hover {
-  background: #ddd;
-  color: black;
+  background: #f2f2f2;
+  color: black; 
 }
+
 
 #welcome-section {
   background-color: lightgreen;
@@ -47,6 +47,12 @@ body {
 }
 
 .knowledge {
+ color: snow;
+ font-size: 30px;
+ text-align: center;
+}
+
+.about {
  color: snow;
  font-size: 30px;
  text-align: center;
@@ -93,10 +99,50 @@ body {
   text-align: center;
 }
 
+.about-tile{
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 30px;
+  width:100%;
+  height: 100%;
+  float:left;
+  padding:50px 15px;
+  
+}
+
+.tile-5{
+  background-color: mediumseagreen;
+  grid-column: 2;
+  grid-row: 1;
+  text-align: center;
+}
+
+.tile-6{
+  background-color: mediumseagreen;
+  grid-column: 3;
+  grid-row: 2;
+  text-align: center;
+}
+
+.tile-7{
+  background-color: mediumseagreen;
+  grid-column: 2;
+  grid-row: 2;
+  text-align: center;
+}
+
+.tile-8{
+  background-color: mediumseagreen;
+  grid-column: 3;
+  grid-row: 2;
+  text-align: center;
+}
+
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
 <body>
 <section id="navbar">
 <div class="navbar">
@@ -104,6 +150,7 @@ body {
   <a href="#knowledge">Knowledge</a>
   <a href="#about">About</a>
   <a href="https://github.com/Maximum2lol">GitHub</a>
+  <a href="https://discord.gg/P8SBTvQ">Discord</a>
 </div>
   </section>
 
@@ -120,42 +167,61 @@ body {
       <a style="text-decoration: none; color: white;" href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank"> 
       <section class="tile-1">
         <h1>Git</h1>
-        <p>Decent</p>
-        Click here to go to Git
+        <p>Click here to go to Git</p>
         </a>
        </section>
      
       <a style="text-decoration: none; color: white;" href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank">
        <section class="tile-2">
           <h1>FreeCodeCamp</h1>
-          <p>Decent</p>
-        Click here to go to FreeCodeCamp
+          <p>Click here to go to FreeCodeCamp</p>
         </a>
        </section>
      
       <a style="text-decoration: none; color: white;" href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank">
       <section class="tile-3">
        <h1>The Odin Project</h1>
-        <p>Decent</p>
-         Click here to go to The Odin Project
+        <p>Click here to go to The Odin Project</p>
         </a>
       </section>
  <a style="text-decoration: none; color: white;" href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank">
       <section class="tile-4">
        <h1>Arduino</h1>
-       <p>Decent</p>       
-        Click here to go to Arduino
+       <p>Click here to go to Arduino</p>       
        </a>
     </section>
   </div> 
 </section>
- 
-<section id="about">
-    <div class="project-title">
-    <h2>Contact</h2>
-    <p>Contact me by using mail: email som skalbrukesforåkontaktemeg@kontaktmegmail.com</p>
-  </div>
-  </section>
+
+  <section class="about" id="about">
+  <h1>Contact me</h1> 
+      
+    <div class="about-tile">
+      <a style="text-decoration: none; color: white;" target="_blank"> 
+      <section class="tile-5">
+        <h1>Mail</h1>
+        <p>AceXBusiness@outlook.com</p>
+        </a>
+       </section>
+     
+      <a style="text-decoration: none; color: white;" target="_blank">
+       <section class="tile-6">
+          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpmcdeadline2.files.wordpress.com%2F2018%2F03%2Felon-musk.jpg&f=1&nofb=1" alt="Lamp" width="310" height="200">
+       </section>
+     
+      <a style="text-decoration: none; color: white;" href="https://linktr.ee/AceX" target="_blank">
+      <section class="tile-7">
+       <h1>Linktree</h1>
+        <p>Click here to go to Linktree</p>
+        </a>
+      </section>
+ <a style="text-decoration: none; color: white;" target="_blank">
+      <section class="tile-8">
+        <iframe src="https://discordapp.com/widget?id=637368167945076736&theme=dark" width="350" height="300" allowtransparency="true" frameborder="0"></iframe>
+        </a>
+    </section>
+  </div> 
+</section>
 
 <script>
 
